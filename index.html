@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Archivo+Black&family=Bitcount+Grid+Double:wght@100..900&family=Bungee+Inline&family=Bungee+Shade&family=Cantata+One&family=Caveat:wght@400..700&family=Chonburi&family=Dela+Gothic+One&family=Diplomata&family=Eagle+Lake&family=Goblin+One&family=Gravitas+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumar+One&family=Kumar+One+Outline&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+ 
+    <main>
+         <div class="passo ativo" id="passo-0"> 
+            <img src="cena 0.png" alt="">
+            <p>Esse é você... </p>
+            <button class="btn-proximo" data-proximo="1">... </button>
+         </div>
+
+
+         <div class="passo" id="passo-1"> 
+            <img src="cena 1 final.png" alt="">
+            <p>Você é um guerreiro, e a mando do rei foi em busca de uma cidade perdida, em uma floresta. </p>
+            <button class="btn-proximo" data-proximo="2"> ... </button>
+         </div>
+
+
+         <div class="passo" id="passo-2"> 
+            <img src="cena 2 final.png" alt="">
+            <p>O rei não especificou em qual floresta era pra procurar, no entanto hávia duas, uma à norte e a outra à oeste. </p>
+            <button class="btn-proximo" data-proximo="3"> norte </button>
+            <button class="btn-proximo" data-proximo="4"> oeste </button>
+         </div>
+
+
+         <div class="passo" id="passo-3"> 
+             <img src="cena 3 final.png" alt="">
+            <p>O nome da floresta ao norte, se chama Evergreen, e assim como o nome diz, elas estão sempre verdes. No entanto estamos no inverno, então o frio te destrai das cores. </p>
+            <button class="btn-proximo" data-proximo="5">... </button>
+         </div>
+
+
+         <div class="passo" id="passo-4"> 
+             <img src="Cena 4-take 1.png" alt="">
+            <p>O nome da floresta à oeste, se chama Fallen leaves, e é uma floresta completamente amarela com alguns tons de vermelho e laranja, com folhas caidas, muitas folhas. A temperatura está relativamente agradável.  </p>
+            <button class="btn-proximo" data-proximo="6">... </button>
+         </div>
+
+
+         <div class="passo" id="passo-5"> 
+             <img src="Cena 3-take 2 .png" alt="">
+            <p>Há duas trilhas na entrada, uma à esquerda e a outra à direita. a trilha da esquerda tem uma placa de perigo, já a da direita tem uma placa quebrada.  </p>
+            <button class="btn-proximo" data-proximo="7">Esquerda </button>
+            <button class="btn-proximo" data-proximo="8">Direita</button>
+         </div>
+
+         <div class="passo" id="passo-6"> 
+            <img src="Cena 4 - take 2 .png" alt="">
+            <p>Há tres trilhas, uma à direita uma ao meio e a outra à esquerda. Tem uma placa na trilha da direita, com  "terreno instável" escrito.  </p>
+            <button class="btn-proximo" data-proximo="9">Esquerda </button>
+            <button class="btn-proximo" data-proximo="10">Meio</button>
+            <button class="btn-proximo" data-proximo="11">Direita</button>
+         </div>
+
+
+         <div class="passo" id="passo-7">
+            <img src="Cena 3 esquerda take 1.png" alt="">
+            <p>A trilha está estranhamente silenciosa, e com muita neve. </p>
+            <button class="btn-proximo" data-proximo="12"> ... </button>
+         </div>
+
+
+         <div class="passo" id="passo-8"> 
+            <img src="Cena 3 direita .png" alt="">
+            <p>Enquanto segue a trilha, voce sente uma presença te vijiando.  </p>
+            <button class="btn-proximo" data-proximo="21">seguir a trilha </button>
+            <button class="btn-proximo" data-proximo="13">voltar e ir a esquerda</button>
+         </div>
+
+
+         <div class="passo" id="passo-9"> 
+             <img src="Cena 4 -  esquerda .png" alt="">
+            <p>Ao decorrer da trilha voce vê um lago muito bonito. </p>
+            <button class="btn-proximo" data-proximo="14"> seguir a trilha </button> 
+         </div>
+
+
+         <div class="passo" id="passo-10"> 
+            <img src="Cena 4 - meio.png" alt="">
+            <p>Ao decorrer da trilha voce vê algumas montanhas no horizonte a direita. </p>
+            <button class="btn-proximo" data-proximo="14"> seguir a trilha </button>
+         </div>
+
+
+         <div class="passo" id="passo-11"> 
+            <img src="Cena 4 - direita  take 1.png" alt="">
+            <p>Enquanto segue a trilha, voce pensa em voltar.  </p>
+            <button class="btn-proximo" data-proximo="15">seguir a trilha </button>
+            <button class="btn-voltar" data-voltar="6">voltar</button>
+         </div> 
+         
+
+         <div class="passo" id="passo-12"> 
+            <img src="Cena 3 esquerda take 2 .png" alt="">
+            <p>Enquanto segue, seus pés ficam dormentes de tanto frio, e você pensa em voltar...  </p>
+            <button class="btn-proximo" data-proximo="16">continuar seguindo</button>
+            <button class="btn-proximo" data-proximo="20">voltar e ir a direita</button>
+         </div>
+
+
+         <div class="passo" id="passo-13"> 
+            <img src="Cena 3 voltando.png" alt="">
+            <p>Enquanto está voltando, você escuta um barulho, e... </p>
+            <button class="btn-proximo" data-proximo="21">... </button>
+         </div>
+
+
+         <div class="passo" id="passo-14"> 
+            <img src="Cena 4 - meio e esquerda.png" alt="">
+            <p>Ao seguir voce percebe que à uma divisão de florestas... </p>
+            <button class="btn-proximo" data-proximo="17">... </button>
+         </div>
+
+
+         <div class="passo" id="passo-15">
+            <img src="Cena 4 - direita take 2.png" alt="">
+            <p>Você passa perto de colinas, pisa em pedras ingremes e...  </p>
+            <button class="btn-proximo" data-proximo="19">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-16">
+            <img src="Cena 3 esquerda take 3.png" alt="">
+            <p>No final a trilha você vê algumas luzes</p>
+            <button class="btn-proximo" data-proximo="24">ir correndo</button>
+             <button class="btn-proximo" data-proximo="20">ir andando</button>
+         </div>
+
+
+         <div class="passo" id="passo-17">
+            <img src="Cena 4 -3 interligações .png" alt="">
+            <p>Ao entrar você percebe o ambiente ficando muito frio.</p>
+            <button class="btn-proximo" data-proximo="18">continuar seguindo</button>
+         </div>
+
+
+         <div class="passo" id="passo-18">
+            <img src="Cena 3 esquerda take 2 .png" alt="">
+            <p>Enquanto segue, seus pés ficam dormentes de tanto frio.</p>
+            <button class="btn-proximo" data-proximo="16">continuar seguindo</button>
+         </div>
+
+
+         <div class="passo" id="passo-19">
+            <img src="Cena 4 - direita  take 3.png" alt="">
+            <p>... acaba caindo...</p>
+            <button class="btn-proximo" data-proximo="22">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-20">
+            <img src="Cena 3 esquerda take 5 .png" alt="">
+            <p>Sua vizão fica embasada e sua respiração trava</p>
+            <button class="btn-proximo" data-proximo="23">...</button>
+         </div>
+       
+
+         <div class="passo" id="passo-21">
+            <img src="Cena 3 urso .png" alt="">            
+            <p>... a presença se revela, é um urso enorme, com muita fome.</p>
+            <button class="btn-proximo" data-proximo="25">correr</button>
+            <button class="btn-proximo" data-proximo="30">atacar</button>
+         </div>
+
+
+         <div class="passo" id="passo-22">
+            <img src="" alt="">
+            <p>... e acaba morrendo.</p>
+            <button class="btn-proximo" data-proximo="1000">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-23">
+            <img src="Cena 3 esquerda take 5,5.png" alt="">
+            <p>... e você cai no chão e morre congelado.</p>
+            <button class="btn-proximo" data-proximo="1000">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-24">
+            <img src="Casa take 1.png" alt="">
+            <p>Você encontra uma cabana com uma luz lá dentro...</p>
+            <button class="btn-proximo" data-proximo="80">ir ver</button>
+         </div>
+         
+
+         <div class="passo" id="passo-25">
+            <img src="Urso Correr Take 1 .png" alt="">
+            <p>Ao correr , o urso começa a te alcançar, e então você pensa em se esconder em alguma arvore.</p>
+            <button class="btn-proximo" data-proximo="26">continuar correndo</button>
+            <button class="btn-proximo" data-proximo="28">esconder-se</button>
+         </div>
+
+
+         <div class="passo" id="passo-26">
+            <img src="Urso  C. Correr Take 2 .png" alt="">
+            <p>O urso te alcança e te da uma mordida...</p>
+            <button class="btn-proximo" data-proximo="27">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-27">
+            <p>e devora você por inteiro.</p>
+            <button class="btn-proximo" data-proximo="1000">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-28">
+            <img src="Urso Esconder Take 2.png" alt="">
+            <p>Você se esconde... e percebe uma brexa... </p>
+            <button class="btn-proximo" data-proximo="30">atacar</button>
+            <button class="btn-proximo" data-proximo="29">correr</button>
+         </div>
+
+
+         <div class="passo" id="passo-29">
+            <img src="Urso Correr Dnv.png" alt="">
+            <p>Você corre, mas depois de um tempo urso te escuta, assim indo correndo atraz de você...</p>
+            <button class="btn-proximo" data-proximo="43">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-30">
+            <img src="Urso Ataque  Take 1.png" alt="">
+            <p>Você desfere um poderoso golpe com sua espada, assim fazendo um grave ferimento no urso...</p>
+            <button class="btn-proximo" data-proximo="31">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-31">
+            <img src="Urso Ataque Take 2.png" alt="">
+            <p>O urso começa a agonizar e morre. Você logo pensa em arrancar sua pele para fazer um casaco.</p>
+            <button class="btn-proximo" data-proximo="32">seguir a trilha mesmo assim</button>
+            <button class="btn-proximo" data-proximo="33">arrancar a pele</button>
+         </div>
+
+
+         <div class="passo" id="passo-32">
+            <img src="Urso Ataque Take 3 Frio.png" alt="">
+            <p>O frio te abala e você desmaia de hipotermia...</p>
+            <button class="btn-voltar" data-voltar="22">...</button>
+         </div>
+
+
+         
+         <div class="passo" id="passo-33">
+            <img src="Urso Ataque  Take 3 Pele.png" alt="">
+            <p>Você faz um casaco com a pele do urso, e volta a trilha.</p>
+            <button class="btn-proximo" data-proximo="34">seguir a trilha</button>
+         </div>
+
+         
+         <div class="passo" id="passo-34">
+            <img src="Cena 3 esquerda take 3 mau.png" alt="">
+            <p>No final da trilha você vê algumas luzes</p>
+            <button class="btn-proximo" data-proximo="35">ir ver</button>
+         </div>
+
+         <div class="passo" id="passo-35">
+            <img src="Casa take 1 mau.png" alt="">
+            <p>Você encontra uma cabana com uma luz lá dentro...</p>
+            <button class="btn-proximo" data-proximo="36">ir ver</button>
+         </div>
+
+
+         <div class="passo" id="passo-36">
+            <img src="Casa take 2  .png" alt="">
+            <p>No deck da cabana tem uma porta, um lixo e uma janela.</p>
+            <button class="btn-proximo" data-proximo="37">lixo</button>
+            <button class="btn-proximo" data-proximo="39">porta</button>
+            <button class="btn-proximo" data-proximo="42">janela</button>
+         </div>
+
+
+         <div class="passo" id="passo-37">
+            <img src="Casa take 3 , lixo.png" alt="">
+            <p>... é um lixo.</p>
+            <button class="btn-proximo" data-proximo="38">guardar a pele do urso. (isso te deixa mais apresentavel.)</button>
+             <button class="btn-voltar" data-voltar="36">voltar.</button>
+         </div>
+
+
+         <div class="passo" id="passo-38">
+            <p>Você guardou a pele do urso.</p>
+            <button class="btn-proximo" data-proximo="44">voltar.</button>
+         </div>
+
+
+         <div class="passo" id="passo-39">
+            <img src="Casa take 3 porta.png" alt="">
+            <p>... é um porta rustica.</p>
+            <button class="btn-proximo" data-proximo="40">bater</button>
+             <button class="btn-voltar" data-voltar="36">voltar</button>
+         </div>
+
+
+         <div class="passo" id="passo-40">
+            <p>... </p>
+            <button class="btn-proximo" data-proximo="41">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-41">
+            <p>Você escuta alguem rezando bem baixinho ...</p>
+            <button class="btn-voltar" data-voltar="36">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-42">
+            <img src="Casa take 3 , cortina fechada.png" alt="">
+            <p>A janela e a cortina estão fechadas.</p>
+            <button class="btn-voltar" data-voltar="36">voltar</button>
+         </div>
+
+        
+         <div class="passo" id="passo-43">
+            <img src="Urso  C. Correr Take 2 .png" alt="">
+            <p>... e te devora, assim te matando.</p>
+            <button class="btn-proximo" data-proximo="1000">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-44">
+            <img src="Casa take 2 Mau.png" alt="">
+            <p>No deck da cabana tem uma porta, um lixo e uma janela.</p>
+            <button class="btn-proximo" data-proximo="45">lixo</button>
+            <button class="btn-proximo" data-proximo="46">porta</button>
+            <button class="btn-proximo" data-proximo="53">janela</button>
+         </div>
+
+
+          <div class="passo" id="passo-45">
+            <img src="Casa take 3 ,  lixo cheio.png" alt="">
+            <p>... é um lixo.</p>
+            <button class="btn-voltar" data-voltar="44">voltar</button>
+         </div>
+
+
+         <div class="passo" id="passo-46">
+            <img src="Casa take 3 porta.png" alt="">
+            <p>... é um porta rustica.</p>
+            <button class="btn-proximo" data-proximo="47">bater.</button>
+             <button class="btn-voltar" data-voltar="44">voltar</button>
+         </div>
+
+
+          <div class="passo" id="passo-47">
+            <img src="Velho take 1 .png" alt="">
+            <p>Você é recebido por um velho.</p>
+            <button class="btn-proximo" data-proximo="48">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-48">
+            <img src="Velho take 2.png" alt="">
+            <p>O velho sem perguntar, logo te dá comida e uma blusa. </p>
+            <button class="btn-proximo" data-proximo="49">agradecer o velho</button>
+            <button class="btn-proximo" data-proximo="50">quem é voce?</button>
+         </div>
+
+
+         <div class="passo" id="passo-49">
+            <img src="Velho take 3 rei.png" alt="">
+            <p>Denada meu jovem, e mais uma dica... essa floresta é muito traiçoeira. Porem, existe um espirito que ajuda os seres de coração puro, e dizem que este "espirito" já foi um rei muito forte no passado, e existe uma estatua dele aqui perto, se quizer ver.</p>
+            <button class="btn-proximo" data-proximo="52">...</button>
+         </div>
+
+
+          <div class="passo" id="passo-50">
+            <img src="Velho take 3 Olaf.png" alt="">
+            <p>Meu nome é Olaf, sou um alfaiate</p>  
+            <button class="btn-voltar" data-voltar="48">voltar</button>
+         </div>
+
+
+         <div class="passo" id="passo-52">
+            <p>Você come e veste a blusa, e se despede do velho.</p>
+            <button class="btn-proximo" data-proximo="54">voltar a trilha</button>
+         </div>
+
+
+         <div class="passo" id="passo-53">
+            <img src="Casa take 3 , cortina fechada.png" alt="">
+            <p>A janela e a cortina estão fechadas.</p>  
+            <button class="btn-voltar" data-voltar="44">voltar</button>
+         </div>
+
+
+         <div class="passo" id="passo-54">
+            <img src="Estátua take 1.png" alt="">
+            <p>Ao seguir, você encontra a estatua que o velho hávia falado...</p>
+            <button class="btn-proximo" data-proximo="55">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-55">
+            <img src="Estátua take 2.png" alt="">
+            <p>... mas derrepente um espirito sai da estatua...</p>
+            <button class="btn-proximo" data-proximo="56">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-56">
+            <img src="BD take 1.png" alt="">
+            <p>... e olha no fundo de seus olhos...</p>
+            <button class="btn-proximo" data-proximo="57">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-57">
+            <img src="BD take 2.png" alt="">
+            <p>Você, assustado, corre em desparada...</p>
+            <button class="btn-proximo" data-proximo="58">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-58">
+             <img src="BD take_3.png" alt="">
+            <p>... e caba entrando na mata... </p>
+            <button class="btn-proximo" data-proximo="59">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-59">
+             <img src="BD take 4.png" alt="">
+            <p>... e no desespero acaba caindo de um morro... </p>
+            <button class="btn-proximo" data-proximo="60">...</button>
+         </div>
+        
+
+         <div class="passo" id="passo-60">
+             <img src="BD take 5.png" alt="">
+            <p>... batendo a cabeça, ficando incônciente...</p>
+            <button class="btn-proximo" data-proximo="61">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-61">
+             <img src="BD take 6.png" alt="">
+            <p>Ao acordar você nâo se recorda de onde está... </p>
+            <button class="btn-proximo" data-proximo="62">...</button>
+         </div>
+      
+
+         <div class="passo" id="passo-62">
+             <img src="BD take 7.png" alt="">
+            <p>... e assim fica, por três dias em busca uma forma de sair da floresta...</p>
+            <button class="btn-proximo" data-proximo="63">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-63">
+             <img src="BD take 8.png" alt="">
+            <p> ... a fome... a sede...</p>
+            <button class="btn-proximo" data-proximo="64">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-64">
+             <img src="BD take 9.png" alt="">
+            <p>... começam a fazer efeito...</p>
+            <button class="btn-proximo" data-proximo="65">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-65">
+             <img src="BD take 10.png" alt="">
+            <p>... e mesmo sentindo seu coração bater ...</p>
+            <button class="btn-proximo" data-proximo="66">...</button>
+         </div>
+         
+
+         <div class="passo" id="passo-66">
+             <img src="BD take 11.png" alt="">
+            <p>... cada vez mais fraco...</p>
+            <button class="btn-proximo" data-proximo="67">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-67">
+             <img src="BD take 12.png" alt="">
+            <p>... você, em seu ultimo suspiro...</p>
+            <button class="btn-proximo" data-proximo="68">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-68">
+             <img src="BD take 13.png" alt="">
+            <p>... caí ajoelhado...</p>
+            <button class="btn-proximo" data-proximo="69">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-69">
+             <img src="BD take 14.png" alt="">
+            <p>... e diz..</p>
+            <button class="btn-proximo" data-proximo="70">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-70">
+            <img src="BD take 15.png" alt="">
+            <p>... me perdoe meu rei...</p>
+            <button class="btn-proximo" data-proximo="71">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-71">
+            <p>... por não ter achado a cidad...</p>
+            <button class="btn-proximo" data-proximo="72">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-72">
+            <img src="BD take 16.png" alt="">
+            <p></p>
+            <button class="btn-proximo" data-proximo="73">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-73">
+            <img src="BD take 17.png" alt="">
+            <p></p>
+            <button class="btn-proximo" data-proximo="74">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-74">
+            <img src="BD take 18.png" alt="">
+            <p></p>
+            <button class="btn-proximo" data-proximo="75">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-75">
+            <p>(Final ruim)</p>
+            <button class="btn-proximo" data-proximo="95">...</button>
+         </div>
+
+
+
+
+          <div class="passo" id="passo-1000">
+            <p>Game over!</p>
+            <button class="btn-voltar" data-voltar="0">reiniciar</button>
+         </div>
+
+
+
+
+
+
+
+         
+        <div class="passo" id="passo-80">
+            <img src="Casa take 2  .png" alt="">
+            <p>No deck da cabana tem uma porta, um lixo e uma janela.</p>
+            <button class="btn-proximo" data-proximo="81">lixo</button>
+            <button class="btn-proximo" data-proximo="82">porta</button>
+            <button class="btn-proximo" data-proximo="88">janela</button>
+         </div>
+
+         <div class="passo" id="passo-81">
+            <img src="Casa take 3 , lixo.png" alt="">
+            <p>... é um lixo.</p>
+            <button class="btn-voltar" data-voltar="80">voltar</button>
+         </div>
+
+
+         <div class="passo" id="passo-82">
+            <img src="Casa take 3 porta.png" alt="">
+            <p>... é um porta rustica.</p>
+            <button class="btn-proximo" data-proximo="83">bater</button>
+             <button class="btn-voltar" data-voltar="80">voltar</button>
+         </div>
+
+
+         <div class="passo" id="passo-83">
+            <img src="Velho take 1 .png" alt="">
+            <p>Você é recebido por um velho.</p>
+            <button class="btn-proximo" data-proximo="84">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-84">
+            <img src="Velho take 2.png" alt="">
+            <p>O velho sem perguntar, logo te dá comida e uma blusa. </p>
+            <button class="btn-proximo" data-proximo="85">agradecer o velho</button>
+            <button class="btn-proximo" data-proximo="86">quem é voce?</button>
+         </div>
+
+
+         <div class="passo" id="passo-85">
+            <img src="Velho take 3 rei.png" alt="">
+            <p>Denada meu jovem, e mais uma dica... essa floresta é muito traiçoeira. Porem, existe um espirito que ajuda os seres de coração puro, e dizem que este "espirito" já foi um rei muito forte no passado, e existe uma estatua dele aqui perto, se quizer ver.</p>
+            <button class="btn-proximo" data-proximo="87">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-86">
+            <img src="Velho take 3 Olaf.png" alt="">
+            <p>Meu nome é Olaf, sou um alfaiate</p>
+            <button class="btn-voltar" data-voltar="84">voltar</button>
+         </div>
+         
+
+         <div class="passo" id="passo-87">
+            <p>Você come e veste a blusa, e se despede do velho.</p>
+            <button class="btn-proximo" data-proximo="89">voltar a trilha</button>
+         </div>
+
+
+         <div class="passo" id="passo-88">
+            <img src="Casa take 3, cortina aberta.png" alt="">
+            <p>A janela está fechada, mas a cortina está aberta.</p>
+            <button class="btn-proximo" data-proximo="80">voltar</button>
+         </div>
+        
+
+         <div class="passo" id="passo-89">
+             <img src="Estátua take 1.png" alt="">
+            <p>Ao seguir, você encontra a estatua que o velho hávia falado...</p>
+            <button class="btn-proximo" data-proximo="90">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-90">
+             <img src="Estátua take 2.png" alt="">
+            <p>... mas derrepente um espirito sai da estatua...</p>
+            <button class="btn-proximo" data-proximo="91">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-91">
+             <img src="GE  take 1.png" alt="">
+            <p>... e entra na mata.</p>
+            <button class="btn-proximo" data-proximo="92">seguir o espirito.</button>
+         </div>
+
+
+         <div class="passo" id="passo-92">
+            <p>Ao seguir o espirito...</p>
+            <button class="btn-proximo" data-proximo="93">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-93">
+             <img src="GE take 2 .png" alt="">
+            <p>Você encontra uma cidade em ruinas</p>
+            <p>(Final bom)</p>
+            <button class="btn-proximo" data-proximo="94">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-94">
+            <p></p>
+            <button class="btn-proximo" data-proximo="95">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-95">
+            <p>Creditos: Arte: João Pedro |Programação: João Pedro</p>
+            <p>Ideias: João Pedro, Familiares e amigos.</p>
+            <p>instagram: jaozinho_qua26</p>
+            <button class="btn-proximo" data-proximo="96">...</button>
+         </div>
+
+
+         <div class="passo" id="passo-96">
+            <p>Obrigado por jogar!</p>
+            <button class="btn-voltar" data-voltar="0">Jogar de novo?</button>
+         </div>
+
+
+
+    </main>
+   <script src="script.js"></script>
+
+</body>
+</html>
